@@ -7,7 +7,7 @@ PATH=/bin:/usr/bin:/usr/local/bin
 # to create script file, prepare text file with commands and then use chmod 755 filename in Cygwin to make it executable
 
 case $# in
-	[0-1])
+	[0-1])s
 		echo usage example: $0 samples chr1.gz.vcf ch2.gz.vcf ch3.gz.vcf ... >&2
     	exit 1
     	;;
