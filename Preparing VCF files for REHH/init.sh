@@ -3,7 +3,7 @@
 PATH=/bin:/usr/bin:/usr/local/bin
 # Setting the path, so commands are not executed from users PATH
 
-# This script will automatically run script2 on all chromosomes from [1-22] to prepare files for REHH
+# This script will automatically run the main script on all chromosomes from [1-22] to prepare files for REHH
 # NOTE: input chromsomes files must be named as "chrI.vcf.gz" where "I" corresponds to the chromosome number
 
 
@@ -11,7 +11,7 @@ case $# in
 	1)
 		for i in {1..22}
 		do 
-			./script2 "$1" "chr$i.vcf.gz"
+			./main "$1" "chr$i.vcf.gz"
 		done
 		;;
 
